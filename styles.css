@@ -1,0 +1,113 @@
+
+@media screen and (min-width: 320px) {
+ 
+    body, html {
+        height: 100%;
+    }
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto 200px 60px;
+}
+
+.header {
+        background-color: blue;
+}
+
+.main {
+        background-color:red;
+}
+
+.widget {
+        background-color:seagreen;
+}
+
+.footer {
+        background-color: yellow;
+}
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body, html {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 400px auto;
+        grid-template-rows: auto 400px 100px;
+        grid-template-areas: 
+         "h m"
+         "h w"
+         "h f";
+       
+    }
+    
+    .header {
+        grid-area: h;     
+        background-color: blue;
+    }
+    
+    .main {
+        grid-area: m;   
+        background-color: red;
+    }
+    
+    .widget {
+        grid-area: w;  
+        background-color: seagreen;
+    }
+    
+    .footer {
+        grid-area: f;  
+        background-color: yellow;
+    }
+}
+
+
+
+
+@media screen and (min-width: 2500px) {
+    body, html {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 400px auto 400px;
+        grid-template-rows: auto 100px;
+        grid-template-areas: 
+         "h m w"
+         "h f w";
+       
+    }
+    
+    .header {
+        grid-area: h;     
+        background-color: blue;
+    }
+    
+    .main {
+        grid-area: m;   
+        background-color: red;
+    }
+    
+    .widget {
+        grid-area: w;  
+        background-color: seagreen;
+    }
+    
+    .footer {
+        grid-area: f;  
+        background-color: yellow;
+    }
+}
